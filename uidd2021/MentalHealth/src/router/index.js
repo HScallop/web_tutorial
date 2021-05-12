@@ -6,6 +6,8 @@ import reservation from '@/views/reservation.vue'
 import Picktime from '@/views/Picktime.vue'
 import Matchresult from '@/views/Matchresult.vue'
 import Reservationsuccess from '@/views/Reservationsuccess.vue'
+import register from '@/views/register.vue'
+import login from '@/views/login.vue'
 
 Vue.use(Router)
 
@@ -39,6 +41,14 @@ export default new Router({
       path: '/Reservationsuccess',
       name: 'Reservationsuccess',
       component: Reservationsuccess
+    },
+    {
+      path: '/register',
+      component: register
+    },
+    {
+      path: '/login',
+      component: login
     }
   ]
 })
